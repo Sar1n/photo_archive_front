@@ -1,0 +1,17 @@
+<div class="header">
+    <button class="okbutton" (click)="ShowAll()">Show all</button>
+    <input type="text" class="textfield" placeholder="Serach title">
+    <button class="okbutton">Search by title</button>
+    <input type="text" class="textfield" placeholder="Serach id">
+    <button class="okbutton">Search by id</button>
+</div>
+<div class="container">
+    <div class="row" *ngFor="let postss of postsbyfour">
+        <div class="element" *ngFor="let post of postss">
+            <div class="title"><a>{{post.Title}}</a></div>
+            <img class="pic" src="{{post.Content}}">
+            <div class="info">
+            </div>
+        </div>
+    </div>
+</div>

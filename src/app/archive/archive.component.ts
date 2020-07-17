@@ -1,0 +1,50 @@
+import { Component, OnInit } from '@angular/core';
+import { GetpostsService } from '../getposts.service';
+import { Post } from "../post.model";
+import { Observable } from "rxjs";
+import { NumberValueAccessor } from '@angular/forms';
+
+@Component({
+  selector: 'app-archive',
+  templateUrl: './archive.component.html',
+  styleUrls: ['./archive.component.css'],
+  providers: [GetpostsService]
+})
+export class ArchiveComponent implements OnInit {
+
+  //public Posts:Array<Post>;
+  posts: Post[] = [];
+  postsbyfour: Post[][] = [];
+  postsJson: string;
+  counter: number;
+  rows: number;
+
+  constructor(private getpostsService: GetpostsService) { }
+
+  ShowAll(){
+    this.getpostsService.GetAll().subscribe(data => this.posts=data);
+    
+    this.posts.forEach(element => {
+      console.log(element.Title);
+    });
+
+
+    this.postsbyfour.push([]);
+    this.counter = 0;
+    this.rows = 0;
+    this.posts.forEach(post => {
+      this.postsbyfour[this.rows].push(post);
+      this.counter = this.counter + 1;
+      if (this.counter == 4)
+      {
+        this.rows = this.rows + 1;
+        this.postsbyfour.push([]);
+        this.counter = 0;
+      }
+    });
+  }
+
+  ngOnInit(): void {
+  }
+
+}

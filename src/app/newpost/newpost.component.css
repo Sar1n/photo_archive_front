@@ -1,0 +1,181 @@
+:root {
+    --maincolor: #4a4a4a; /*887399 553b69*/ 
+}
+
+body {
+    background-color: var(--maincolor);
+    padding: 0px;
+    margin: 0px;
+}
+
+div.wrapper{
+    background-color: var(--maincolor);
+    overflow: hidden;
+    width: 100%;
+}
+
+div.header{
+    background-color: #383838;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+div.topelement{
+    background-color: #383838;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    line-height: 40px;
+}
+div.topelement:hover{
+    background-color: #008CBA;
+}
+div.topelement:active{
+    transition-duration: 0s;
+    background-color: #4CAF50;
+}
+
+#left{
+    width: 10%;
+    background-color: var(--maincolor);
+    float: left;
+    height: 10px;
+}
+
+DIV.content {
+    background-color: var(--maincolor);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 5px;
+    width: 50%;
+    min-width: 850px;
+    height: auto;
+    text-align: center;
+    float: left;
+}
+
+#right{
+    width: 5%;
+    background-color: var(--maincolor);
+    float: left;
+    height: 10px;
+}
+
+.settings{
+    background-color: var(--maincolor);
+    float: left;
+    width: 25%;
+    min-width: 400;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 5px;
+}
+
+
+DIV.piccontainer{
+    background-color: var(--maincolor);
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    min-width: auto;
+}
+
+DIV.textcontainer{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    min-width: auto;
+    display: block;
+}
+
+IMG.pic {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    height: auto;
+    max-height: 550px;
+    background-color: var(--maincolor);
+}
+
+.textfield{
+    background-color: var(--maincolor);
+    color: #ffffff;
+    object-fit: contain;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.textfield:focus {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+}
+
+.description{
+    object-fit: contain;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size:18px;
+    resize: none;
+    font-family: Georgia, serif;
+    background-color: var(--maincolor);
+    color: #ffffff;
+    border: none;
+}
+
+.description:focus {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+}
+
+DIV.buttoncontainer{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    min-width: auto;
+    display: block;
+}
+
+.okbutton
+{
+    background-color: teal;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.okbutton:active
+{
+    transition-duration: 0s;
+    background-color: #008CBA;
+    color: white;
+}

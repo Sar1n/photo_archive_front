@@ -1,0 +1,52 @@
+DIV.textcontainer{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    min-width: auto;
+    display: block;
+}
+.textfield{
+    background-color: var(--maincolor);
+    color: #ffffff;
+    object-fit: contain;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.textfield:focus {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+}
+
+.okbutton
+{
+    background-color: teal;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.okbutton:active
+{
+    transition-duration: 0s;
+    background-color: #008CBA;
+    color: white;
+}
+div.searchcontainer{
+    width: 400px;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 40px;
+}

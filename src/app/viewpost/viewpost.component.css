@@ -1,0 +1,203 @@
+:root {
+    --maincolor: #4a4a4a;
+}
+body {
+    background-color: var(--maincolor);
+}
+div.wrapper{
+    background-color: var(--maincolor);
+    overflow: hidden;
+    width: 100%;
+}
+#left{
+    width: 10%;
+    background-color: var(--maincolor);
+    float: left;
+    height: 10px;
+}
+
+DIV.content {
+    background-color: var(--maincolor);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 5px;
+    width: 50%;
+    min-width: 850px;
+    height: auto;
+    float: left;
+}
+
+#right{
+    width: 5%;
+    background-color: var(--maincolor);
+    float: left;
+    height: 10px;
+}
+
+.settings{
+    background-color: var(--maincolor);
+    float: left;
+    width: 25%;
+    min-width: 400;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    padding-top: 5px;
+}
+
+.title{
+    float: left;
+    color: #ffffff;
+}
+
+DIV.textcontainer{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    min-width: auto;
+    display: block;
+}
+
+DIV.piccontainer{
+    background-color: var(--maincolor);
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    min-width: auto;
+}
+
+IMG.pic {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    height: 550px;
+    background-color: var(--maincolor);
+}
+
+.textdescription{
+    object-fit: contain;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size:18px;
+    resize: none;
+    font-family: Georgia, serif;
+    background-color: var(--maincolor);
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+}
+
+.textfield{
+    background-color: var(--maincolor);
+    color: #ffffff;
+    object-fit: contain;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.textfield:focus {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+}
+
+DIV.buttoncontainer{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    min-width: auto;
+    display: block;
+}
+
+.viewscounter{
+    color: white;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.likecontainer{
+    display: flex;
+}
+
+.likebotton{
+    background-color: #4CAF50;
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.likecounter{
+    color: white;
+}
+
+.number{
+    padding: 2.5% 0;
+}
+
+.dislikebutton{
+    background-color: #e63c26;
+    width: 75px;
+    height: 30px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.postedby{
+    margin-top: 60px;
+    color: white;
+    font-size: large;
+}
+
+
+.okbutton
+{
+    background-color: #4CAF50;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.okbutton:active
+{
+    transition-duration: 0s;
+    background-color: #008CBA;
+    color: white;
+}

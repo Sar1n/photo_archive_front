@@ -1,0 +1,8 @@
+:root {
+    --maincolor: #4a4a4a; /*887399 553b69*/ 
+}
+body {
+    background-color: var(--maincolor);
+    padding: 0px;
+    margin: 0px;
+}
