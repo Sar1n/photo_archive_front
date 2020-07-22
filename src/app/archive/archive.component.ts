@@ -12,18 +12,17 @@ import { NumberValueAccessor } from '@angular/forms';
 })
 export class ArchiveComponent implements OnInit {
 
-  //public Posts:Array<Post>;
   posts: Post[] = [];
   postsbyfour: Post[][] = [];
   postsJson: string;
   counter: number;
   rows: number;
 
+  searchstring: string;
+
   constructor(private getpostsService: GetpostsService) { }
 
-  ShowAll(){
-    this.getpostsService.GetAll().subscribe(data => this.posts=data);
-    
+  ByFour(){
     this.posts.forEach(element => {
       console.log(element.Title);
     });
@@ -44,7 +43,25 @@ export class ArchiveComponent implements OnInit {
     });
   }
 
+  ShowAll(){
+    this.postsbyfour = [];
+    this.getpostsService.GetAll().subscribe( data => {this.posts=data.reverse(); this.ByFour();} );
+  }
+
+  ShowSome(){
+    this.postsbyfour = [];
+    this.getpostsService.GetSome(this.searchstring).subscribe( data => {this.posts=data.reverse(); this.ByFour();} );
+  }
+
+  ViewItem(event){
+    var target = event.currentTarget;//event.target || event.srcElement || event.currentTarget;
+    var idAttr = target.attributes.id;
+    var value = idAttr.nodeValue;
+    
+  }
+
   ngOnInit(): void {
+    this.ShowAll();
   }
 
 }
