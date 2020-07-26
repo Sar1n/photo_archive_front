@@ -12,6 +12,8 @@ import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ArchiveComponent } from './archive/archive.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DoneComponent } from './done/done.component'
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { ArchiveComponent } from './archive/archive.component';
     ViewpostComponent,
     SearchComponent,
     NavbarComponent,
-    ArchiveComponent
+    ArchiveComponent,
+    DoneComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
@@ -42,12 +46,12 @@ import { ArchiveComponent } from './archive/archive.component';
         component: ViewpostComponent
       },
       {
-        path: 'viewpost',
-        component: SearchComponent
-      },
-      {
         path: 'archive',
         component: ArchiveComponent
+      },
+      {
+        path: 'done',
+        component: DoneComponent
       }
     ])
   ],

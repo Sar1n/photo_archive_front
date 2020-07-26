@@ -1,13 +1,13 @@
 <div id="left"></div>
 <div class="content">
     <div class="textcontainer">
-        <input type="text" class="textfield" placeholder="Link to image..." #input (keyup)="Loadhref(input.value)">
+        <input type="file" class="filefield" placeholder="image" accept="image/*" #input (change)="processFile($event)">
     </div>
     <div class="textcontainer">
         <input type="text" class="textfield" placeholder="Titile..." name="title" [(ngModel)]="title">
     </div>
-    <div class="piccontainer" *ngIf="true"> <!-- this.content != null -->
-        <img class="pic" src="{{ this.content }}">
+    <div class="piccontainer">
+        <img class="pic" [src]="imgdisplay">
     </div>
     <div class="textcontainer">
         <textarea spellcheck="false" rows="7" class="description" placeholder="Give it a description..." name="description" [(ngModel)]="description"></textarea>
@@ -15,5 +15,5 @@
 </div>
 <div id="right"></div>
 <div class="settings">
-    <button class="okbutton" (click)="ButtonClick()">Post</button>
+    <button class="okbutton" *ngIf="this.buttonshow" (click)="ButtonClick()" routerLink="/done">Post</button>
 </div>

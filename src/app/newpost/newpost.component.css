@@ -125,6 +125,20 @@ IMG.pic {
     font-size:18px;
 }
 
+.filefield{
+    background-color: var(--maincolor);
+    color: #ffffff;
+    object-fit: contain;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    font-size:18px;
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+}
+
 .textfield:focus {
     box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
 }

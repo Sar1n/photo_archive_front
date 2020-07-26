@@ -10,8 +10,13 @@ export class AddpostService {
   constructor(private http: HttpClient) { }
 
   NewPost(post: Post){
+    //console.log(post);
     const body = {Content: post.Content, Title: post.Title, Description: post.Description};
-    console.log(body);
+    return this.http.post('https://localhost:44348/api/post', body);
+  }
+  NewTitleDescr(post: Post){
+    const body = {Content: post.Content, Title: post.Title, Description: post.Description};
+    //console.log(body);
     return this.http.post('https://localhost:44348/api/post', body);
   }
 }

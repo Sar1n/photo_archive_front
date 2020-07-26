@@ -2,8 +2,6 @@
     <button class="okbutton" (click)="ShowAll()">Show all</button>
     <input type="text" class="textfield" placeholder="Serach title" name="searchstring" [(ngModel)]="searchstring">
     <button class="okbutton" (click)="ShowSome()">Search by title</button>
-    <input type="text" class="textfield" placeholder="Serach id">
-    <button class="okbutton">Search by id</button>
 </div>
 <div class="container">
     <div class="row" *ngFor="let row of postsbyfour">

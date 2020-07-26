@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GetpostsService } from '../getposts.service';
 import { Post } from "../post.model";
 import { Observable } from "rxjs";
+import { BrowserModule } from '@angular/platform-browser'
 import { NumberValueAccessor } from '@angular/forms';
 
 @Component({
@@ -23,9 +24,9 @@ export class ArchiveComponent implements OnInit {
   constructor(private getpostsService: GetpostsService) { }
 
   ByFour(){
-    this.posts.forEach(element => {
-      console.log(element.Title);
-    });
+    // this.posts.forEach(element => {
+    //   console.log(element.Title);
+    // });
 
 
     this.postsbyfour.push([]);
